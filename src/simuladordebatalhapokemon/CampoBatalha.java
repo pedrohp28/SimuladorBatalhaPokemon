@@ -110,12 +110,12 @@ public class CampoBatalha extends javax.swing.JFrame {
         }
 
         barraVida1.setValue(barraVida1.getValue() - batalha.causarDano(bulbasauro));
+        JOptionPane.showMessageDialog(null, "Bulbasauro causou: " + batalha.causarDano(bulbasauro) + " de dano!");
         if (barraVida1.getValue() <= 0) {
             JOptionPane.showMessageDialog(null, "Bulbasauro ganhou!!!");
             dispose();
             System.exit(0);
         }
-        JOptionPane.showMessageDialog(null, "Bulbasauro causou: " + batalha.causarDano(bulbasauro) + " de dano!");
 
 
     }//GEN-LAST:event_bAtaqueActionPerformed
